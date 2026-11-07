@@ -7,7 +7,7 @@ type TodoItemProps = {
     onEdit: (id: string, newText: string) => void;
 }
 
-export function TodoItems({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
+export function TodoItem({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
 
     const handleEdit = () => {
         const newText = prompt("Edit your todo", todo.text);
@@ -22,7 +22,8 @@ export function TodoItems({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
             
 
             <input type="checkbox" checked={todo.completed} onChange={() => onToggle(todo.id)} />
-            <span onClick={() => onToggle(todo.id)}>{todo.text}</span>
+            <span onClick={() => onToggle(todo.id)}
+                style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span>
 
             <button type="button" onClick={handleEdit}>Edit</button>
             <button onClick={() => onDelete(todo.id)}>Delete</button>

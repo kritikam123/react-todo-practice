@@ -19,6 +19,9 @@ export function TodoItems({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
     };
     return(
         <div>
+            
+
+            <input type="checkbox" checked={todo.completed} onChange={() => onToggle(todo.id)} />
             <span onClick={() => onToggle(todo.id)}>{todo.text}</span>
 
             <button type="button" onClick={handleEdit}>Edit</button>

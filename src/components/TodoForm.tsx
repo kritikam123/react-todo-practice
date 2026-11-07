@@ -19,7 +19,7 @@ export function TodoForm({onAdd} : TodoFormProps) {
             <form onSubmit={handleSubmit}>
                 <label> Add Your Task</label>
                 <input type="text" value={text} placeholder="Enter your task" id="input" onChange={(e) => setText(e.target.value) } />
-                <button type="button">Add</button>
+                <button type="submit">Add</button>
                 
             </form>
         </div>

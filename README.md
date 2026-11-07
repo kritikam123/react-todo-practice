@@ -1,32 +1,16 @@
-# React + TypeScript + Vite
+# React Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A to-do app built with React and TypeScript while learning React fundamentals.
 
-Currently, two official plugins are available:
+<img width="535" height="290" alt="image" src="https://github.com/user-attachments/assets/670127b5-5e31-4447-a649-9e68adc66695" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Add, edit, delete and complete tasks
+- Empty tasks are blocked
 
-## React Compiler
+## What I learned
+- (one or two sentences, e.g. lifting state up, updating arrays immutably)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Run locally
+npm install
+npm run dev

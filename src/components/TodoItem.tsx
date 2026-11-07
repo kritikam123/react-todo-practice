@@ -18,7 +18,7 @@ export function TodoItems({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
         }
     };
     return(
-        <div>
+        <li>
             
 
             <input type="checkbox" checked={todo.completed} onChange={() => onToggle(todo.id)} />
@@ -27,6 +27,6 @@ export function TodoItems({todo, onToggle, onDelete, onEdit} : TodoItemProps) {
             <button type="button" onClick={handleEdit}>Edit</button>
             <button onClick={() => onDelete(todo.id)}>Delete</button>
 
-        </div>
+        </li>
     );
 }

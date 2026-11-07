@@ -1,7 +1,7 @@
-import { TodoItems } from "./TodoItems";
+import { TodoItems } from "./TodoItem";
 import type { Todo } from "../types/todo";
 
-type TaskListProps = {
+type TodoListProps = {
     todos: Todo[];
     onToggle: (id: string) => void;
     onDelete: (id: string) => void;
@@ -9,7 +9,7 @@ type TaskListProps = {
 
 }
 
-export function TodoList({todos, onToggle, onDelete, onEdit} : TaskListProps) {
+export function TodoList({todos, onToggle, onDelete, onEdit} : TodoListProps) {
     if(todos.length === 0) {
         return <p>No task here.</p>
     }
